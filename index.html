@@ -15,21 +15,143 @@
 
 <body>
   <div id="section">
-    <img id="logo" src="logo.png" width="128" height="128" />
-    <div><b>vlin</b></div>
-    <div>Becoming a <span title="Full Stack Developer" style="font-style:italic;">FSD</span></div>
-    <div>
-      <a href="https://cn.linkedin.com/pub/victor-lin/3a/443/37a" style="text-decoration:none;" target="_blank">
-        <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Victor Lin's LinkedIn profile" style="vertical-align:middle;" border="0">
-        <span style="font: 80% Arial,sans-serif; color:#0783B6;">View my profile</span>
-      </a>
+    <div id="front">
+      <img id="logo" src="logo.png" width="128" height="128" />
+      <p><b>vlin</b></p>
+      <p>Becoming a <span title="Full Stack Developer" style="font-style:italic;">FSD</span></p>
+      <p>
+        <a href="https://cn.linkedin.com/pub/victor-lin/3a/443/37a" style="text-decoration:none;" target="_blank">
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Victor Lin's LinkedIn profile" style="vertical-align:middle;" border="0">
+          <span style="font: 80% Arial,sans-serif; color:#0783B6;">View my profile</span>
+        </a>
+      </p>
+      <ul id="getInTouch">
+        <li><a href="https://twitter.com/vlin" target="_blank"><i class="fa fa-twitter"></i><br>Twitter</a></li>
+        <li><a href="https://github.com/vlin" target="_blank"><i class="fa fa-github"></i><br>GitHub</a></li>
+      </ul>
     </div>
-    <ul id="getInTouch">
-      <li><a href="https://twitter.com/vlin" target="_blank"><i class="fa fa-twitter"></i><br>Twitter</a></li>
-      <li><a href="https://github.com/vlin" target="_blank"><i class="fa fa-github"></i><br>GitHub</a></li>
-    </ul>
+    <div id="stack">
+      <b>Web Stack</b>
+      <a id="back"><i class="fa fa-undo"></i></a>
+      <ul id="stackList">
+        <li><a>Language</a>
+          <ul>
+            <li>Javascript</li>
+            <li>Nodejs</li>
+            <li>PHP</li>
+          </ul>
+        </li>
+        <li><a>JS library</a>
+          <ul>
+            <li>jQuery</li>
+            <li>Zepto</li>
+            <li>Underscore</li>
+          </ul>
+        </li>
+        <li><a>JS framework</a>
+          <ul>
+            <li>Backbone</li>
+            <li>React</li>
+          </ul>
+        </li>
+        <li><a>Package</a>
+          <ul>
+            <li>NPM</li>
+            <li>Bower</li>
+          </ul>
+        </li>
+        <li><a>UI framework</a>
+          <ul>
+            <li>Bootstrap</li>
+            <li>PURE</li>
+          </ul>
+        </li>
+        <li><a>Template</a>
+          <ul>
+            <li>Markdown</li>
+            <li>SWIG</li>
+            <li>ECT</li>
+          </ul>
+        </li>
+        <li><a>Platform</a>
+          <ul>
+            <li>PhoneGap</li>
+            <li>Cordova</li>
+          </ul>
+        </li>
+        <li><a>Server</a>
+          <ul>
+            <li>Nginx</li>
+            <li>Apache</li>
+          </ul>
+        </li>
+        <li><a>Quality</a>
+          <ul>
+            <li>JSLint</li>
+          </ul>
+        </li>
+        <li><a>Performance</a>
+          <ul>
+            <li>YSlow</li>
+            <li>jsPerf</li>
+            <li>PageSpeed</li>
+          </ul>
+        </li>
+        <li><a>Debug</a>
+          <ul>
+            <li>Developer Tools</li>
+            <li>Firebug</li>
+            <li>Fiddler</li>
+          </ul>
+        </li>
+        <li><a>Build</a>
+          <ul>
+            <li>Grunt</li>
+            <li>Gulp</li>
+            <li>webpack</li>
+            <li>browserify</li>
+          </ul>
+        </li>
+        <li><a>Build Tasks</a>
+          <ul>
+            <li>Minification</li>
+            <li>Compilation</li>
+            <li>Concatenation</li>
+            <li>Uglification</li>
+            <li>Image Optimization</li>
+          </ul>
+        </li>
+        <li><a>Editor</a>
+          <ul>
+            <li>Sublime Text</li>
+            <li>Vim</li>
+            <li>WebStorm</li>
+          </ul>
+        </li>
+        <li><a>HTTP</a>
+          <ul>
+            <li>Request method</li>
+            <li>Request</li>
+            <li>Response</li>
+            <li>Status Code</li>
+          </ul>
+        </li>
+        <li><a>DB</a>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+      </ul>
+
+    </div>
   </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
   <script>
+  $(function(){
+    $('#logo, #back').on('click', function(){
+      $('#section').toggleClass('turn');
+    });
+  });
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function() {
