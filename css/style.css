@@ -27,6 +27,7 @@ body {
   padding-top: 100px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #666;
+  overflow: auto;
 }
 #logo {
   border-radius: 50% 50% 50% 50%;
