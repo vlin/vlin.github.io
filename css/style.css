@@ -21,24 +21,24 @@ body {
   margin-top: -250px;
   margin-left: -150px;
   width: 300px;
-  height: 400px;
+  height: 500px;
   background: #f6f6f6;
   text-align: center;
-  padding-top: 100px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #666;
-  overflow: auto;
+  overflow: hidden;
 }
 #logo {
   border-radius: 50% 50% 50% 50%;
   width: 128px;
   height: 128px;
   border: 2px solid #fff;
+  margin-top: 100px;
   margin-bottom: 20px;
-  -moz-animation: borderani 1s linear 0s infinite alternate;
-  -webkit-animation: borderani 1s linear 0s infinite alternate;
-  -o-animation: borderani 1s linear 0s infinite alternate;
-  animation: borderani 1s linear 0s infinite alternate;
+  -moz-animation: borderani .8s linear 0s infinite alternate;
+  -webkit-animation: borderani .8s linear 0s infinite alternate;
+  -o-animation: borderani .8s linear 0s infinite alternate;
+  animation: borderani .8s linear 0s infinite alternate;
 }
 #logo:hover {
   cursor: pointer;
@@ -76,7 +76,8 @@ body {
     border-color: #8ae;
   }
 }
-#section div {
+#section p {
+  margin: 0;
   padding: 10px;
 }
 #getInTouch {
@@ -103,4 +104,51 @@ body {
 #getInTouch i {
   font-size: 20px;
   line-height: 1.5em;
+}
+
+#section.turn #front{
+  opacity: 0;
+  margin-top: -500px;
+}
+#section.turn #stack{
+  opacity: 1;
+}
+
+#front{
+  -moz-transition: opacity 1s, margin 1s;
+  -webkit-transition: opacity 1s, margin 1s;
+  -o-transition: opacity 1s, margin 1s;
+  transition: opacity 1s, margin 1s;
+  z-index: 1;
+  height: 500px;
+}
+#stack{
+  clear: both;
+  text-align: left;
+  opacity: 0;
+  padding: 20px;
+  height: 460px;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 0;
+}
+
+#back{
+  float: right;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: -10px;
+}
+
+#stackList{
+  max-height: 446px;
+  overflow: auto;
+  margin: 0;
+  width: 240px;
+}
+#stackList > li{
+  padding: 3px;
 }
