@@ -14,6 +14,7 @@ body {
   background: #4896C3 url(../bg.png) no-repeat;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
+
 #section {
   position: absolute;
   top: 50%;
@@ -28,6 +29,7 @@ body {
   box-shadow: 2px 2px 4px #666;
   overflow: hidden;
 }
+
 #logo {
   border-radius: 50% 50% 50% 50%;
   width: 128px;
@@ -44,6 +46,7 @@ body {
   cursor: pointer;
   border-color: #8ae;
 }
+
 @-moz-keyframes borderani {
   from {
     border-color: #fff;
@@ -76,10 +79,12 @@ body {
     border-color: #8ae;
   }
 }
+
 #section p {
   margin: 0;
   padding: 10px;
 }
+
 #getInTouch {
   margin: 0 auto;
   padding: 0;
@@ -114,7 +119,7 @@ body {
   opacity: 1;
 }
 
-#front{
+#front {
   -moz-transition: opacity 1s, margin 1s;
   -webkit-transition: opacity 1s, margin 1s;
   -o-transition: opacity 1s, margin 1s;
@@ -122,7 +127,8 @@ body {
   z-index: 1;
   height: 500px;
 }
-#stack{
+
+#stack {
   clear: both;
   text-align: left;
   opacity: 0;
@@ -135,20 +141,22 @@ body {
   z-index: 0;
 }
 
-#back{
+#back {
   float: right;
   cursor: pointer;
   width: 20px;
   height: 20px;
   margin-right: -10px;
+  text-align: center;
+  color: #000;
 }
 
-#stackList{
+#stackList {
   max-height: 446px;
   overflow: auto;
   margin: 0;
   width: 240px;
 }
-#stackList > li{
+#stackList > li {
   padding: 3px;
 }
